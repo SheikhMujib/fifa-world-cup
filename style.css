@@ -1,0 +1,24 @@
+/* common styles */
+body {
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header banner style */
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1321px;
+    height: 646px;
+    background-color: #A0E64F;
+    border-radius: 30px;
+    position: absolute;
+    left: 140px;
+    top: 50px;
+}
