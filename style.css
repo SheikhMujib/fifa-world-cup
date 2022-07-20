@@ -12,6 +12,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 125px;
 }
 
 /* header banner style */
@@ -62,10 +63,9 @@ h1 {
 #live-btn a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'HelveticaNeue';
+    /* font-family: 'HelveticaNeue'; */
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
 }
 
 .fa-angle-right {
@@ -75,4 +75,45 @@ h1 {
 .banner-image img {
     width: 88%;
     margin-top: 34.5px;
+}
+
+/* Content Area Style */
+.content-area {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    column-gap: 10px;
+    width: 1321px;
+}
+
+.sidebar {
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    background-color: #161616;
+}
+
+.sidenav {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.sidenav a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 16px 25px;
+    border-radius: 10px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
