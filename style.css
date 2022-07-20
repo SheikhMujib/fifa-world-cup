@@ -1,6 +1,10 @@
 /* common styles */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body {
     background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -16,9 +20,59 @@ main {
     grid-template-columns: repeat(2, 1fr);
     width: 1321px;
     height: 646px;
-    background-color: #A0E64F;
+    background-color: #161616;
     border-radius: 30px;
-    position: absolute;
-    left: 140px;
-    top: 50px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 25px 25px 120px 100px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 40px 10px 0;
+    color: #ffffff;
+}
+
+#live-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 137px;
+    height: 24px;
+    padding: 16px 25px;
+    border-radius: 5px;
+    background-color: #DD0000;
+    color: #ffffff;
+}
+
+#live-btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'HelveticaNeue';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fa-angle-right {
+    font-size: 25px;
+}
+
+.banner-image img {
+    width: 88%;
+    margin-top: 34.5px;
 }
