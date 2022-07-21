@@ -30,8 +30,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    margin: 25px 25px 120px 100px;
+    width: 531px;
+    height: 424px;
+    margin: 111px auto 111px 106px;
 }
 
 h1 {
@@ -74,8 +75,9 @@ h1 {
 }
 
 .banner-image img {
-    width: 88%;
-    margin-top: 34.5px;
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;
 }
 
 /* Content Area Style */
@@ -111,6 +113,7 @@ h1 {
     font-size: 20px;
     line-height: 30px;
     padding: 16px 25px;
+    border: 1px solid gainsboro;
     border-radius: 10px;
 }
 
@@ -155,7 +158,7 @@ h1 {
 
 
 #view-all-btn {
-    /* display: none; */
+    display: none;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -174,19 +177,18 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 1600px;
     height: 444px;
     background-color: #161616;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(1, 1321px);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 15px;
     align-items: center;
     justify-content: center;
-    /* width: 1321px; */
+    width: 1321px;
 }
 
 .text-logo {
@@ -200,6 +202,8 @@ footer {
 }
 
 .footer-content hr {
+    width: 1320px;
+    height: 0px;
     text-align: center;
     color: #ffffff;
 }
@@ -215,6 +219,16 @@ footer {
 .footer-menu a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.social-links {
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-link a {
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 /* Upcoming-Match Style */
@@ -243,4 +257,39 @@ footer {
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
+}
+
+/* Media Quaries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    main {
+        width: 100%;
+    }
+
+    .banner,
+    .content-area,
+    .blogs,
+    .footer-menu {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .sidebar {
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    footer,
+    .blog, img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    main {
+        width: 100%;
+    }
 }
